@@ -9,7 +9,7 @@ const app = express();
 const corsOptions = {
     origin: function (origin, callback) {
         if (!origin) return callback(null, true);
-        const allowedOrigins = ["http://localhost:5173"];
+        const allowedOrigins = ['https://mskr-glamm-studio.onrender.com'];
         if (allowedOrigins.indexOf(origin) !== -1 || process.env.NODE_ENV !== 'production') {
             callback(null, true);
         } else {
